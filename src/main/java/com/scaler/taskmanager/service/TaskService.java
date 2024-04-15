@@ -12,7 +12,11 @@ public class TaskService {
     private ArrayList<TaskEntity> tasks = new ArrayList<>();
     private int taskID = 1;
 
+<<<<<<< HEAD
     public void addTask(String title, String description, String deadline){
+=======
+    public TaskEntity addTask(String title, String description, String deadline){
+>>>>>>> 6145daa (Controllers is added)
         TaskEntity task = new TaskEntity();
         task.setId(taskID);
         task.setTitle(title);
@@ -21,6 +25,10 @@ public class TaskService {
         task.setCompleted(false);
         tasks.add(task);
         taskID++;
+<<<<<<< HEAD
+=======
+        return task;
+>>>>>>> 6145daa (Controllers is added)
     }
 
     public ArrayList<TaskEntity> getTasks() {
